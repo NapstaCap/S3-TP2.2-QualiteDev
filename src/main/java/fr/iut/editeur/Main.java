@@ -9,10 +9,12 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        // INIT DOCUMENT
         Scanner scanner = new Scanner(System.in);
         Document document = new Document();
         CommandeInvoker invoker = CommandeInvoker.getInstance();
         CommandeFactory factory = CommandeFactory.getInstance();
+        // BOUCLE
         while(true) {
             String input = scanner.nextLine();
             String[] parameters = input.split(";");
