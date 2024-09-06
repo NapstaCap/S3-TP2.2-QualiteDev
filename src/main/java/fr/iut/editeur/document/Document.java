@@ -44,4 +44,5 @@ public class Document {
     public void clear() {
         texte = "";
     }
+    // test pour close #1
 }
