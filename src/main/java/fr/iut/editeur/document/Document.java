@@ -44,4 +44,10 @@ public class Document {
     public void clear() {
         texte = "";
     }
+    // test pour close #1
+    public void inserer(int pos, String insertion) {
+        String apres = texte.substring(pos + 1);
+        String avant = texte.substring(0, pos + 1);
+        texte = avant + insertion + apres;
+    }
 }
