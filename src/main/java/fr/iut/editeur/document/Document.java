@@ -42,6 +42,6 @@ public class Document {
     }
 
     public void clear() {
-        texte = "je suis le goat";
+        texte = "";
     }
 }
