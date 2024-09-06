@@ -40,4 +40,8 @@ public class Document {
     public void effacer(int debut, int fin) {
         remplacer(debut, fin, "");
     }
+
+    public void clear() {
+        texte = "je suis le goat";
+    }
 }
