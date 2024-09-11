@@ -7,13 +7,13 @@ on:
 
 jobs: #Un job est un processus qui contient lui-même des étapes
 
-  nom-job1: #Nom du job 1
+  execTests: #Nom du job 1
     runs-on: ubuntu-latest #Sélection du système d'exploitation où s'exécute le job
     steps: #Etapes à réaliser sur le système
       - name: checkout #Nom de l'action 1
-        run: checkout@v4 #Commande à exécuter (par exemple, javac, gcc, etc...)
+        run: actions/checkout@v4 #Commande à exécuter (par exemple, javac, gcc, etc...)
       - name: java #Nom de l'action 2
-        uses : setup-java@v4 #Utilisation d'une action externe
+        uses : actions/setup-java@v4 #Utilisation d'une action externe
         with : #Paramètres de l'action externe (si besoin)
             java-version: 17
             distribution: 'oracle'
