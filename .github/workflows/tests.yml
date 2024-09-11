@@ -7,7 +7,7 @@ on:
 
 jobs: #Un job est un processus qui contient lui-même des étapes
 
-  execTests: #Nom du job 1
+  nom-job1: #Nom du job 1
     runs-on: ubuntu-latest #Sélection du système d'exploitation où s'exécute le job
     steps: #Etapes à réaliser sur le système
       - name: checkout #Nom de l'action 1
