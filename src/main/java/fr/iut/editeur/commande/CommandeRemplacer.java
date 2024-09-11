@@ -2,12 +2,19 @@ package fr.iut.editeur.commande;
 
 import fr.iut.editeur.document.Document;
 
+
+/**
+ * Commande permettant de remplacer un texte par un autre.
+ */
 public class CommandeRemplacer extends CommandeDocument {
 
     public CommandeRemplacer(Document document, String[] parameters) {
         super(document, parameters);
     }
 
+    /**
+     * Remplace le texte entre les positions debut et fin par le texte de remplacement.
+     */
     @Override
     public void executer() {
         String remplacement;
