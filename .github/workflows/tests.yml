@@ -19,6 +19,3 @@ jobs: #Un job est un processus qui contient lui-même des étapes
             distribution: 'oracle'
       - name: executionTests
         run: mvn test
-
-permissions:
-  ....
